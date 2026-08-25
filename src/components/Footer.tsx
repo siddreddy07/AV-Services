@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
         {/* Brand */}
         <div className="mb-12 sm:mb-14 lg:mb-16">
           <div className="flex items-center gap-3 mb-5 sm:mb-6">
-            <img src="/logo.jpg" alt="AV Services" className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-[8px]" />
+            <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="AV Services" className="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-[8px]" />
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl font-bold text-[#FFFFFF] tracking-tight leading-none">AV SERVICES</span>
               <span className="font-mono text-[8px] sm:text-[9px] tracking-[0.2em] uppercase text-[#C31F21] font-bold mt-[3px] leading-none">

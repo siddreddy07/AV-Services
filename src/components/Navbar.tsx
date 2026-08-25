@@ -114,7 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote }) => {
                 scrolled ? 'w-8 h-8 sm:w-8 sm:h-8 rounded-[7px]' : 'w-9 h-9 sm:w-10 sm:h-10 rounded-[8px]'
               }`}>
                 <img
-                  src="/logo.jpg"
+                  src={`${import.meta.env.BASE_URL}logo.jpg`}
                   alt="AV Services Logo"
                   className="w-full h-full object-cover"
                   loading="eager"
@@ -225,7 +225,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote }) => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between px-6 pt-6 pb-5 border-b border-[#E2E4E8]">
             <div className="flex items-center gap-2.5">
-              <img src="/logo.jpg" alt="" className="w-8 h-8 rounded-[6px] object-cover" />
+              <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="" className="w-8 h-8 rounded-[6px] object-cover" />
               <div>
                 <span className="text-[13px] font-bold text-[#121316] tracking-tight block leading-none">AV SERVICES</span>
                 <span className="font-mono text-[7px] tracking-[0.2em] uppercase text-[#C31F21] font-bold leading-none mt-[2px] block">MENU</span>
