@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #F4F5F7;
+    --bg-clean: #FFFFFF;
+    --text-ink: #121316;
+    --text-secondary: #58585A;
+    --color-brand-red: #C31F21;
+    --color-brand-red-dark: #A30E0F;
+    --color-brand-dark: #121316;
+    --color-brand-dark-deep: #0D0E10;
+    --color-border: #E2E4E8;
+  }
+
+  body {
+    font-family: 'Instrument Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-ink);
+    letter-spacing: -0.015em;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Instrument Sans', sans-serif;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+  }
+}
+
+/* Primary CTA System: Brand Charcoal -> Vibrant Crimson Red on hover with 3px/-3px arrow transition */
+.btn-brand-primary,
+.btn-forest-primary {
+  background-color: #121316;
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-brand-primary:hover,
+.btn-forest-primary:hover {
+  background-color: #C31F21;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(195, 31, 33, 0.32);
+}
+
+.btn-brand-primary .cta-arrow,
+.btn-forest-primary .cta-arrow {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brand-primary:hover .cta-arrow,
+.btn-forest-primary:hover .cta-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Crimson Red Primary CTA */
+.btn-red-primary,
+.btn-lime-primary {
+  background-color: #C31F21;
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-red-primary:hover,
+.btn-lime-primary:hover {
+  background-color: #FFFFFF;
+  color: #121316;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.35);
+}
+
+.btn-red-primary .cta-arrow,
+.btn-lime-primary .cta-arrow {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-red-primary:hover .cta-arrow,
+.btn-lime-primary:hover .cta-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Secondary CTA with smooth growing underline & subtle color shift */
+.clean-secondary-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #58585A;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 250ms ease;
+  padding-bottom: 2px;
+}
+
+.clean-secondary-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: #C31F21;
+  transition: width 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clean-secondary-link:hover {
+  color: #121316;
+}
+
+.clean-secondary-link:hover::after {
+  width: 100%;
+}
+
+.clean-secondary-link .arrow-icon {
+  transition: transform 250ms ease;
+}
+
+.clean-secondary-link:hover .arrow-icon {
+  transform: translate(2px, 2px);
+}
+
+/* Navbar Link Interaction: Crimson underline */
+.nav-micro-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #58585A;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.35rem 0.6rem;
+  transition: color 200ms ease;
+}
+
+.nav-micro-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0.6rem;
+  right: 0.6rem;
+  height: 1.5px;
+  background-color: #C31F21;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-micro-link:hover {
+  color: #121316;
+}
+
+.nav-micro-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Clean Line Underline Wipe Effect */
+.clean-line-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.clean-line-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: #C31F21;
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clean-line-link:hover::after {
+  width: 100%;
+}
+
+/* Restrained scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F5F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5D9E0;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C31F21;
+}
+
+/* No text selection on interactive comparison sliders */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AV Services Pressure Wash",
+  "description": "Professional pressure washing and exterior cleaning for Houston and Katy, Texas. Self-contained mobile service for driveways, siding, patios, fences, and commercial properties.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
