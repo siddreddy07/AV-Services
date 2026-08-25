@@ -72,14 +72,14 @@ export default function App() {
         {/* 08. Residential / Commercial (Side-by-side Typography Split) */}
         <ResidentialCommercial onSelectCategory={handleSelectCategory} />
 
+        {/* 09. Selected Work */}
+        <SelectedWork />
+
         {/* The Clean Standard (Scroll-Revealed Visual Break) */}
         <VisualBreak />
 
-        {/* 09. Mobile Service (We bring the equipment to your location) */}
+        {/* 10. Mobile Service (We bring the equipment to your location) */}
         <MobileService />
-
-        {/* 10. Selected Work (Uneven Editorial Gallery with Fresh Lime Badges) */}
-        <SelectedWork />
 
         {/* 11. Instagram (Follow the daily transformations) */}
         <InstagramSection />

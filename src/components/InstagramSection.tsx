@@ -5,7 +5,7 @@ export const InstagramSection: React.FC = () => {
   const posts = [
     {
       id: 'ig-1',
-      image: 'https://images.unsplash.com/photo-1584463623578-3019d5ef8d08?auto=format&fit=crop&w=1600&q=85',
+      image: 'https://images.unsplash.com/photo-1605146768851-eda79da39897?auto=format&fit=crop&w=1600&q=85',
       caption: 'Rotary concrete cleaner cutting clean lines on circular drive',
       tag: 'Katy, TX'
     },

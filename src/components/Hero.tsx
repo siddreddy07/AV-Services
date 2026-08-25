@@ -127,7 +127,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onExploreWork }) => {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1584463623578-3019d5ef8d08?auto=format&fit=crop&w=2200&q=90"
+                src="https://images.unsplash.com/photo-1605146768851-eda79da39897?auto=format&fit=crop&w=2200&q=90"
                 alt="Deeply cleaned residential concrete driveway and approach in Houston"
                 className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
                 loading="eager"

@@ -21,7 +21,7 @@ export const CLEAN_SERVICES: CleanService[] = [
     summary: 'Deep rotary surface cleaning to lift embedded grime, tire marks, and dark algae from driveways and walkways.',
     surfaceTypes: 'Driveways, sidewalks, garage aprons & curbs',
     keyFeatures: ['Enclosed Rotary Cleaner', 'Even Streak-Free Finish', 'Algae & Oil Removal'],
-    image: 'https://images.unsplash.com/photo-1584463623578-3019d5ef8d08?auto=format&fit=crop&w=1600&q=85',
+    image: 'https://images.unsplash.com/photo-1605146768851-eda79da39897?auto=format&fit=crop&w=1600&q=85',
     alt: 'Clean concrete driveway and sidewalk'
   },
   {
@@ -90,7 +90,7 @@ export const BEFORE_AFTER_ITEMS = [
     stats: '8 Years of Grime Removed',
     note: 'Deep rotary surface cleaning',
     beforeImage: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1800&q=80',
-    afterImage: 'https://images.unsplash.com/photo-1584463623578-3019d5ef8d08?auto=format&fit=crop&w=1800&q=85',
+    afterImage: 'https://images.unsplash.com/photo-1605146768851-eda79da39897?auto=format&fit=crop&w=1800&q=85',
     beforeLabel: 'Before: Heavy black algae, tire tracks & oil staining',
     afterLabel: 'After: Bright, uniform concrete restored to like-new'
   },
